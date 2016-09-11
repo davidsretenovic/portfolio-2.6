@@ -13,38 +13,35 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- fonts -->
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900&subset=latin,latin-ext" type="text/css">
-
-	<!-- css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900&subset=latin,latin-ext" type="text/css">
 
 </head>
 <body>
 
 	<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- removed role="navigation" -->
-    	<div class="container-fluid">
-      		<div class="navbar-header">
-        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            	<span class="sr-only">Toggle navigation</span>
-	            	<span class="icon-bar"></span>
-	            	<span class="icon-bar"></span>
-	            	<span class="icon-bar"></span>
-          		</button>
-		        <header class="name navbar-brand">
-		        	<a href="#">David Sretenovic</a>
-		        </header><!-- end name -->
-      		</div><!-- end navbar-header -->
-		    <div class="navbar-collapse collapse">
-		    	<ul class="nav navbar-nav navbar-right">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<header class="name navbar-brand">
+					<a href="#">David Sretenovic</a>
+				</header><!-- end name -->
+			</div><!-- end navbar-header -->
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Home</a></li>
-          			<li><a href="#about">About</a></li>
-          			<li><a href="#portfolio">Portfolio</a></li>
-          			<li><a href="#features">Features</a></li>
-          			<li><a href="#testimonials">Testimonials</a></li>
-          		</ul>
-		    </div><!-- end navbar-collapse -->
-    	</div><!-- end container-fluid -->
-  	</nav><!-- end nav -->
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+				</ul>
+			</div><!-- end navbar-collapse -->
+		</div><!-- end container-fluid -->
+	</nav><!-- end nav -->
 
 	<!-- main -->
 	<main id="site-main">
@@ -207,42 +204,105 @@
 			</div> <!-- end site-section-inside -->
 		</section>
 
-	</main>
+		<!-- work examples -->
+		<section class="jumbotron" id="work-examples">
+			<div class="hero-content">
+				<h2>Here are some work examples</h2>
+			</div><!-- end hero-content -->
+
+		</section><!-- end section hero -->
+
+		<!-- contact -->
+		<section class="site-section site-section-secondary" id="contact">
+			<div class="site-section-inside form-fit">
+				<h2>Contact Me</h2>
+
+				<div class="col-md-8 col-lg-8 contact-form">
+					<form>
+					<!-- name -->
+						<div class="form-group">
+							<label class="control-label" for="input-name">Your Name</label>  
+							<div>
+						  		<input required="required" id="input-name" name="input-name" type="text" placeholder="Enter Your Name" class="form-control input-md">
+						  		<span class="help-block">Enter your full name</span>  
+							</div>
+					  	</div>
+
+					  	<!-- phone -->
+					  	<div class="form-group">
+							<label class="control-label" for="input-phone">Your Phone Number</label>  
+							<div>
+						  		<input maxlength=10 minlength=10 id="input-phone" name="input-phone" type="text" placeholder="Enter Your Phone Number" class="form-control input-md">
+						  		<span class="help-block">Enter your mobile number</span>  
+							</div>
+					  	</div>
+
+					  	<!-- email -->
+					  	<div class="form-group">
+							<label class="control-label" for="input-email">Your Email</label>  
+							<div>
+						  		<input required="required" id="input-email" name="input-email" type="email" placeholder="Please enter your email address" class="form-control input-md">
+						  		<span class="help-block">Input a valid email address</span>  
+							</div>
+					  	</div>
+
+					  	<!-- message -->
+					  	<div class="form-group">
+							<label class="control-label" for="input-message">Your Message</label>
+							<div>                     
+						  		<textarea style="resize:none" cols="40" rows="5" class="form-control" id="input-message" name="input-message">Please input your message here</textarea>
+							</div>
+					  	</div>
+
+					  	<!-- submit button -->
+					  	<div class="form-group">
+							<!-- <label class="control-label" for="input-submit">Submit</label> -->
+							<div>
+						  		<button id="input-submit" name="input-submit" class="btn btn-primary">Submit</button>
+							</div>
+					  	</div>
+					</form> <!-- end contact form -->
+				</div><!-- end contact-form -->
+			</div><!-- end site-section-inside -->
+
+		</section>
+
+	</main><!-- end main -->
 
 	<!-- footer -->
 	<footer id="footer">
 
-		<img src="img/avatar.jpg" alt="Footer Logo">
+		<img src="img/star.png" alt="Footer Logo">
 		<span>My Website<br>Copyright &copy; 2016-3010</span>
 
 	</footer>
 
 	<!-- Scripts -->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Bootstrap core JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- stellar -->
-    <script src="js/jquery.stellar.min.js"></script>
-    <!-- stellar script -->
-    <script>$('#about').stellar({
-      horizontalScrolling: false,
-      responsive: true
-      });</script>
-    <!-- scrollspy js -->
-    <script type="text/javascript">
-      var $root = $('html, body');
-        $('.navbar-nav a').click(function() {
-          var href = $.attr(this, 'href');
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function () {
-            window.location.hash = href;
-          });
-          return false;
-        });
-    </script>
-    <!-- jquery tooltip example -->
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap core JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- stellar script -->
+	<script>$('.hero-about').stellar({
+	  horizontalScrolling: false,
+	  responsive: true
+	  });</script>
+	<!-- scrollspy js -->
+	<!-- <script type="text/javascript">
+	  var $root = $('html, body');
+		$('.navbar-nav a').click(function() {
+		  var href = $.attr(this, 'href');
+		  $root.animate({
+			scrollTop: $(href).offset().top
+		  }, 500, function () {
+			window.location.hash = href;
+		  });
+		  return false;
+		});
+	</script> -->
+	<!-- jquery tooltip example -->
 	<script>
 	$(function () {
 		$('#tt-01').tooltip();
@@ -250,12 +310,12 @@
 	</script>
 	<!-- jquery tooltip for buttons -->
 	<script>
- 	$(function () {
+	$(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 	</script>
-    <!-- accordion fix -->
-    <script>$('#accordion').collapse().height('auto');</script>
+	<!-- accordion fix -->
+	<script>$('#accordion').collapse().height('auto');</script>
 
 </body>
 </html>

@@ -65,7 +65,7 @@
 
 		<!-- features -->
 
-		<section class="site-section" id="features">
+		<section class="site-section" id="intro">
 			<div class="site-section-inside">
 				<div class="section-header">
 					<h2>Key Features</h2>
@@ -75,44 +75,52 @@
 					<img src="img/star.png" alt="Easy to Use">
 					<h5>Easy to use</h5>
 					<p>So easy a toddler can use it</p>
+					<br>
+					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Easy to Use">See how easy &raquo;</button>
 				</div>
 
 				<div class="feature-box">
 					<img src="img/like.png" alt="Fun to Use">
 					<h5>Fun to use</h5>
 					<p>As fun as a bouncy house!</p>
+					<br>
+					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Fun to Use">See how fun &raquo;</button>
 				</div>
 
 				<div class="feature-box">
 					<img src="img/heart.png" alt="You'll love it">
 					<h5>You'll love it</h5>
 					<p>The best thing since sliced bread!</p>
+					<br>
+					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="You'll love it">Much love &raquo;</button>
 				</div>
 			</div>
 		</section>
 		
 		<!-- about -->
 		
-		<div class="hero hero-about" id="about">
+		<div class="hero hero-about" id="about" data-stellar-background-ratio="0.5">
 			<div class="hero-content">
 				<h1 class="hero-title">About David</h1>
 				<p>The greatest web dev ever.</p>
 				
 				<div class="row">
-					<h2 class="learn-more">Learn More</h2>
+					<!-- <h2 class="learn-more">Learn More</h2> -->
 					<div class="modal-button">
 						<!-- Small modal button -->
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large Modal</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" id="btn-learn-more">
+							<h2 class="learn-more">Learn More</h5>
+						</button>
 					</div> <!-- end modal-button -->
 					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby-"myLargeModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-									<h4 class="modal-title" id="myModalLabel">Modal Title</h4>
+									<h4 class="modal-title" id="myModalLabel">RESUME EXAMPLE</h4>
 								</div>
 								<div class="modal-body">
-									This is the modal body content.
+									Resume example text, should be removed
 									<embed id="modalembed" src="./docs/Rob.Pucci.SysAdmin.2012.pdf"></embed>
 								</div>
 							</div> <!-- end modal content -->
@@ -145,6 +153,15 @@
 					<p>Still to be re-implemented!</p>
 				</div> <!-- end feature-box -->
 			</div> <!-- end site-section-inside -->
+			<br>
+			<div class="site-section-inside">
+				<div class="feature-box">
+					<a href="#" title="Tooltip" id="tt-01">
+						<h5>Tooltips</h5>
+					</a>
+					<p>This tooltip covers the header</p>
+				</div><!-- end feature-box -->
+			</div><!-- end site-section-inside -->
 		</section> <!-- end about section -->
 
 		<!-- testimonials -->
@@ -208,7 +225,7 @@
     <!-- stellar -->
     <script src="js/jquery.stellar.min.js"></script>
     <!-- stellar script -->
-    <script>$.stellar({
+    <script>$('#about').stellar({
       horizontalScrolling: false,
       responsive: true
       });</script>
@@ -225,6 +242,18 @@
           return false;
         });
     </script>
+    <!-- jquery tooltip example -->
+	<script>
+	$(function () {
+		$('#tt-01').tooltip();
+	});
+	</script>
+	<!-- jquery tooltip for buttons -->
+	<script>
+ 	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+	</script>
     <!-- accordion fix -->
     <script>$('#accordion').collapse().height('auto');</script>
 

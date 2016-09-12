@@ -205,64 +205,81 @@
 		</section>
 
 		<!-- work examples -->
-		<section class="jumbotron" id="work-examples">
+		<section class="jumbotron work-examples" id="work-example-1">
 			<div class="hero-content">
 				<h2>Here are some work examples</h2>
 			</div><!-- end hero-content -->
-
+		</section><!-- end section hero -->
+		<section class="jumbotron work-examples" id="work-example-2">
+			<div class="hero-content">
+				<h2>Here are more work examples</h2>
+			</div><!-- end hero-content -->
 		</section><!-- end section hero -->
 
 		<!-- contact -->
 		<section class="site-section site-section-secondary" id="contact">
-			<div class="site-section-inside form-fit">
+			<div class="section-header">
 				<h2>Contact Me</h2>
-
-				<div class="col-md-8 col-lg-8 contact-form">
-					<form>
-					<!-- name -->
-						<div class="form-group">
-							<label class="control-label" for="input-name">Your Name</label>  
-							<div>
-						  		<input required="required" id="input-name" name="input-name" type="text" placeholder="Enter Your Name" class="form-control input-md">
-						  		<span class="help-block">Enter your full name</span>  
+			</div><!-- end section-header -->
+			<div class="site-section-inside">
+				<div class="row row-grid">
+					<div class="col-sm-12 col-md-4 col-lg-4" id="contact-details">
+						<h3>David Sretenovic</h3>
+						<p>Systems Engineer, Front-end Web Developer, Scotch afficionado</p>
+						<p><span class="glyphicon glyphicon-home"></span> Australia</p>
+						<p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:asdfasdfasdf"> someone@somewhere.com</a></p>
+						<p><span class="glyphicon glyphicon-earphone"></span> +61 3 1234 5678</p>
+						<p><span class="glyphicon glyphicon-globe"></span><a href="https://www.github.com/davidsretenovic"> GitHub</a></p>
+      		</div> <!-- end id contact-details -->
+					<div class="col-sm-12 col-md-8 col-lg-8 contact-form">
+						<form>
+						<!-- name -->
+							<div class="form-group">
+								<label class="control-label" for="input-name">Your Name</label>  
+								<div>
+									<input required="required" id="input-name" name="input-name" type="text" placeholder="Enter Your Name" class="form-control input-md">
+									<span class="help-block">Enter your full name</span>  
+								</div>
 							</div>
-					  	</div>
 
-					  	<!-- phone -->
-					  	<div class="form-group">
-							<label class="control-label" for="input-phone">Your Phone Number</label>  
-							<div>
-						  		<input maxlength=10 minlength=10 id="input-phone" name="input-phone" type="text" placeholder="Enter Your Phone Number" class="form-control input-md">
-						  		<span class="help-block">Enter your mobile number</span>  
+								<!-- phone -->
+							<div class="form-group">
+								<label class="control-label" for="input-phone">Your Phone Number</label>  
+								<div>
+									<input maxlength=10 minlength=10 id="input-phone" name="input-phone" type="text" placeholder="Enter Your Phone Number" class="form-control input-md">
+									<span class="help-block">Enter your mobile number</span>  
+								</div>
 							</div>
-					  	</div>
 
-					  	<!-- email -->
-					  	<div class="form-group">
-							<label class="control-label" for="input-email">Your Email</label>  
-							<div>
-						  		<input required="required" id="input-email" name="input-email" type="email" placeholder="Please enter your email address" class="form-control input-md">
-						  		<span class="help-block">Input a valid email address</span>  
+								<!-- email -->
+							<div class="form-group">
+								<label class="control-label" for="input-email">Your Email</label>  
+								<div>
+									<input required="required" id="input-email" name="input-email" type="email" placeholder="Please enter your email address" class="form-control input-md">
+									<span class="help-block">Input a valid email address</span>  
+								</div>
 							</div>
-					  	</div>
 
-					  	<!-- message -->
-					  	<div class="form-group">
-							<label class="control-label" for="input-message">Your Message</label>
-							<div>                     
-						  		<textarea style="resize:none" cols="40" rows="5" class="form-control" id="input-message" name="input-message">Please input your message here</textarea>
+								<!-- message -->
+							<div class="form-group">
+								<label class="control-label" for="input-message">Your Message</label>
+								<div>
+									<textarea style="resize:none" cols="40" rows="5" class="form-control" id="input-message" name="input-message">Please input your message here</textarea>
+									<p id="visible-comment"></p>
+									<h4 id="submit-result"></h4>
+								</div>
 							</div>
-					  	</div>
 
-					  	<!-- submit button -->
-					  	<div class="form-group">
+							<!-- submit button -->
+							<div class="form-group">
 							<!-- <label class="control-label" for="input-submit">Submit</label> -->
-							<div>
-						  		<button id="input-submit" name="input-submit" class="btn btn-primary">Submit</button>
+								<div>
+									<button id="input-submit" name="input-submit" class="btn btn-primary">Submit</button>
+								</div>
 							</div>
-					  	</div>
-					</form> <!-- end contact form -->
-				</div><!-- end contact-form -->
+						</form> <!-- form -->
+					</div><!-- end contact-form -->
+				</div><!-- end row row-grid -->
 			</div><!-- end site-section-inside -->
 
 		</section>
@@ -284,38 +301,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- stellar -->
 	<script src="js/jquery.stellar.min.js"></script>
-	<!-- stellar script -->
-	<script>$('.hero-about').stellar({
-	  horizontalScrolling: false,
-	  responsive: true
-	  });</script>
-	<!-- scrollspy js -->
-	<!-- <script type="text/javascript">
-	  var $root = $('html, body');
-		$('.navbar-nav a').click(function() {
-		  var href = $.attr(this, 'href');
-		  $root.animate({
-			scrollTop: $(href).offset().top
-		  }, 500, function () {
-			window.location.hash = href;
-		  });
-		  return false;
-		});
-	</script> -->
-	<!-- jquery tooltip example -->
-	<script>
-	$(function () {
-		$('#tt-01').tooltip();
-	});
-	</script>
-	<!-- jquery tooltip for buttons -->
-	<script>
-	$(function () {
-		$('[data-toggle="tooltip"]').tooltip();
-	});
-	</script>
-	<!-- accordion fix -->
-	<script>$('#accordion').collapse().height('auto');</script>
-
+	<!-- custom -->
+	<script src="js/scripts.js"></script>
 </body>
 </html>

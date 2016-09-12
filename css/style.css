@@ -66,6 +66,7 @@ header #logo img {
 
 .hero-title {
 	margin: 0;
+	padding-top: 3%;
 	font-size: 100px;
 }
 
@@ -147,12 +148,12 @@ header #logo img {
 .hero-about {
 	background-image: url('../img/hero-crowdedbuildings.jpg');
 	background-attachment: fixed;
-  	background-position: center;
+  background-position: center;
 	background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .learn-more {
@@ -219,39 +220,38 @@ header #logo img {
 }
 
 /* examples */
-#work-examples {
+.work-examples {
 	max-height: 60% !important;
-    background-image: url("../img/hero-lightscape-comp.jpg");
-  	background-position: center;
+	background-position: center;
 	background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	text-align: center;
-  	margin-bottom: 0;
+	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#work-example-1 {
+  background-image: url("../img/hero-lightscape-comp.jpg");
+}
+
+#work-example-2 {
+  background-image: url("../img/hero-reflectivewindows-comp.jpg");
+	background-attachment: fixed;
 }
 
 /* contact */
 #contact {
 	height: 100%;
-}
-
-.form-fit {
 	margin: 0 auto;
-	padding: 15px 20px 15px 20px;
 }
 
 .contact-form {
-	float: right;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	line-height: 1.5;
 }
-
-/* 
-form {
-  margin: 0 auto;
-  padding-top: 1%;
-  padding-bottom: 2%;
-} */
 
 /* footer */
 footer   {

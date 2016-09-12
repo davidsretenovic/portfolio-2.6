@@ -238,7 +238,36 @@ header #logo img {
 
 #work-example-2 {
   background-image: url("../img/hero-reflectivewindows-comp.jpg");
+	/* background-attachment: fixed; */
+}
+
+#work-example-box {
+	height: 80vh;
+	max-height: 90% !important;
+}
+
+#work-example-left {
 	background-attachment: fixed;
+	background-image: url("../img/hero-bridge.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 0;
+}
+
+#work-example-right {
+  text-align: center;
+	background: #efefef;
+	padding-top: 10%;
+	/* margin-bottom: 15px; */
+	font-size: 20px;
+	color: #999;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
 }
 
 /* contact */

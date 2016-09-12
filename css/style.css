@@ -221,7 +221,6 @@ header #logo img {
 
 /* examples */
 .work-examples {
-	max-height: 60% !important;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -242,25 +241,18 @@ header #logo img {
 }
 
 #work-example-box {
-	height: 80vh;
+	height: 500px;
+	background: #efefef;
 	max-height: 90% !important;
 }
 
 #work-example-left {
-	background-attachment: fixed;
-	background-image: url("../img/hero-bridge.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 0;
+	background-color: lightpink;
+	height: 100%;
 }
 
 #work-example-right {
   text-align: center;
-	background: #efefef;
 	padding-top: 10%;
 	/* margin-bottom: 15px; */
 	font-size: 20px;
